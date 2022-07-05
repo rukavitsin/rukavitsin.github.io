@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<providers>
+
+    <!-- Схемы -->
+    <provider id="3101010" type="0" visible="true" background="-1">
+        <name>Схемы</name>
+        <mode>Google</mode>
+        <countries>World</countries>
+        <usage>city,road</usage>
+        <cacheTimeout>2160</cacheTimeout>
+        <url><![CDATA[https://mt{s}.google.com/vt/lyrs=m&hl=ru&x={x}&y={y}&z={z}&scale={ts}]]></url>
+        <serverPart>0;1;2;3</serverPart>
+        <zoomPart>{z}-8</zoomPart>
+        <zoomMin>8</zoomMin>
+        <zoomMax>27</zoomMax>
+        <tileSize>256</tileSize>
+        <tileScales>
+            <tileScale dpi="0" multi="1" replace="1" />
+            <tileScale dpi="320" multi="2" replace="2" />
+        </tileScales>
+        <extraHeader><![CDATA[Referer#https://www.google.com/maps/]]></extraHeader>
+    </provider>
+    <provider id="3101040" type="0" visible="true" background="-1">
+        <name>Схемы</name>
+        <mode>Wikimapia</mode>
+        <countries>World</countries>
+        <usage>city,road</usage>
+        <cacheTimeout>720</cacheTimeout>
+        <url><![CDATA[http://i{s}.wikimapia.org/?x={x}&y={y}&zoom={z}&lng=1]]></url>
+        <serverPart>{x}%4+({y}%4)*4</serverPart>
+        <zoomPart>{z}-8</zoomPart>
+        <zoomMin>8</zoomMin>
+        <zoomMax>30</zoomMax>
+        <tileSize>256</tileSize>
+        <extraHeader><![CDATA[Referer#http://wikimapia.org/]]></extraHeader>
+    </provider>
+
+    <!-- OSM -->
+    <provider id="3102010" type="0" visible="true" background="-1">
+        <name>OSM</name>
+        <mode>Mapnik</mode>
+        <countries>World</countries>
+        <usage>city,road</usage>
+        <cacheTimeout>720</cacheTimeout>
+        <url><![CDATA[https://tile.osmand.net/{ts}{z}/{x}/{y}.png]]></url>
+        <zoomPart>{z}-8</zoomPart>
+        <zoomMin>8</zoomMin>
+        <zoomMax>27</zoomMax>
+        <tileSize>256</tileSize>
+        <tileScales>
+            <tileScale dpi="0" multi="1" replace="" />
+            <tileScale dpi="320" multi="2" replace="hd/" />
+        </tileScales>
+        <extraHeader><![CDATA[Referer#https://osmand.net/go.html]]></extraHeader>
+    </provider>
+    <provider id="3102015" type="0" visible="true" background="-1">
+        <name>OSM</name>
+        <mode>LoMaps</mode>
+        <countries>World</countries>
+        <usage>city,road</usage>
+        <cacheTimeout>720</cacheTimeout>
+        <url><![CDATA[https://{s}.tile.thunderforest.com/locus-4za/{z}/{x}/{y}{ts}.png?apikey=7c352c8ff1244dd8b732e349e0b0fe8d]]></url>
+        <serverPart>a;b;c</serverPart>
+        <zoomPart>{z}-8</zoomPart>
+        <zoomMin>8</zoomMin>
+        <zoomMax>27</zoomMax>
+        <tileSize>256</tileSize>
+        <tileScales>
+            <tileScale dpi="0" multi="1" replace="" />
+            <tileScale dpi="320" multi="2" replace="@2x" />
+        </tileScales>
+    </provider>
+    <provider id="3102020" type="0" visible="true" background="-1">
+        <name>OSM</name>
+        <mode>Cycle</mode>
+        <countries>World</countries>
+        <usage>cycle</usage>
+        <cacheTimeout>720</cacheTimeout>
+        <url><![CDATA[https://{s}.tile.thunderforest.com/cycle/{z}/{x}/{y}{ts}.png]]></url>
+        <serverPart>a;b;c</serverPart>
+        <zoomPart>{z}-8</zoomPart>
+        <zoomMin>8</zoomMin>
+        <zoomMax>27</zoomMax>
+        <tileSize>256</tileSize>
+        <tileScales>
+            <tileScale dpi="0" multi="1" replace="" />
+            <tileScale dpi="320" multi="2" replace="@2x" />
+        </tileScales>
+        <extraHeader><![CDATA[Referer#https://www.openstreetmap.org/]]></extraHeader>
+    </provider>
+    <provider id="3102025" type="0" visible="true" background="-1">
+        <name>OSM</name>
+        <mode>CyclOSM</mode>
+        <countries>World</countries>
+        <usage>cycle</usage>
+        <cacheTimeout>720</cacheTimeout>
+        <url><![CDATA[https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png]]></url>
+        <serverPart>a;b;c</serverPart>
+        <zoomPart>{z}-8</zoomPart>
+        <zoomMin>8</zoomMin>
+        <zoomMax>27</zoomMax>
+        <tileSize>256</tileSize>
+        <extraHeader><![CDATA[Referer#https://www.cyclosm.org/]]></extraHeader>
+    </provider>
+    <provider id="3102030" type="0" visible="true" background="-1">
+        <name>OSM</name>
+        <mode>Outdoors</mode>
+        <countries>World</countries>
+        <usage>hiking,ski</usage>
+        <cacheTimeout>720</cacheTimeout>
+        <url><![CDATA[https://{s}.tile.thunderforest.com/outdoors/{z}/{x}/{y}{ts}.png]]></url>
+        <serverPart>a;b;c</serverPart>
+        <zoomPart>{z}-8</zoomPart>
+        <zoomMin>8</zoomMin>
+        <zoomMax>27</zoomMax>
+        <tileSize>256</tileSize>
+        <tileScales>
+            <tileScale dpi="0" multi="1" replace="" />
+            <tileScale dpi="320" multi="2" replace="@2x" />
+        </tileScales>
+        <extraHeader><![CDATA[Referer#https://www.openstreetmap.org/]]></extraHeader>
+    </provider>
+    <provider id="3102038" type="0" visible="true" background="-1">
+        <name>OSM</name>
+        <mode>OpenTopoMap.Ru</mode>
+        <countries>Russia</countries>
+        <usage>hiking,ski</usage>
+        <cacheTimeout>720</cacheTimeout>
+        <url><![CDATA[https://tile-{s}.opentopomap.ru/{z}/{x}/{y}.png]]></url>
+        <serverPart>a;b;c</serverPart>
+        <zoomPart>{z}-8</zoomPart>
+        <zoomMin>8</zoomMin>
+        <zoomMax>26</zoomMax>
+        <tileSize>256</tileSize>
+        <extraHeader><![CDATA[Referer#https://opentopomap.ru/]]></extraHeader>
+    </provider>
+    <provider id="3102040" type="0" visible="true" background="-1">
+        <name>OSM</name>
+        <mode>OpenTopoMap.Org</mode>
+        <countries>World</countries>
+        <usage>hiking,ski</usage>
+        <cacheTimeout>720</cacheTimeout>
+        <url><![CDATA[https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png]]></url>
+        <serverPart>a;b;c</serverPart>
+        <zoomPart>{z}-8</zoomPart>
+        <zoomMin>8</zoomMin>
+        <zoomMax>25</zoomMax>
+        <tileSize>256</tileSize>
+        <extraHeader><![CDATA[Referer#https://opentopomap.org/]]></extraHeader>
+    </provider>
+    <provider id="3102050" type="0" visible="true" background="-1">
+        <name>OSM</name>
+        <mode>OpenSnowMap</mode>
+        <countries>World</countries>
+        <usage>ski</usage>
+        <cacheTimeout>720</cacheTimeout>
+        <url><![CDATA[https://www.opensnowmap.org/base_snow_map{ts}/{z}/{x}/{y}.png]]></url>
+        <zoomPart>{z}-8</zoomPart>
+        <zoomMin>8</zoomMin>
+        <zoomMax>27</zoomMax>
+        <tileSize>256</tileSize>
+        <tileScales>
+            <tileScale dpi="0" multi="1" replace="" />
+            <tileScale dpi="320" multi="1.5" replace="_high_dpi" />
+        </tileScales>
+        <extraHeader><![CDATA[Referer#https://www.opensnowmap.org/]]></extraHeader>
+    </provider>
+    <provider id="3102060" type="0" visible="true" background="-1">
+        <name>OSM</name>
+        <mode>Transport</mode>
+        <countries>World</countries>
+        <usage>transport</usage>
+        <cacheTimeout>720</cacheTimeout>
+        <url><![CDATA[https://{s}.tile.thunderforest.com/transport/{z}/{x}/{y}{ts}.png]]></url>
+        <serverPart>a;b;c</serverPart>
+        <zoomPart>{z}-8</zoomPart>
+        <zoomMin>8</zoomMin>
+        <zoomMax>27</zoomMax>
+        <tileSize>256</tileSize>
+        <tileScales>
+            <tileScale dpi="0" multi="1" replace="" />
+            <tileScale dpi="320" multi="2" replace="@2x" />
+        </tileScales>
+        <extraHeader><![CDATA[Referer#https://www.openstreetmap.org/]]></extraHeader>
+    </provider>
+
+    <!-- Спутниковые снимки -->
+    <provider id="3103010" type="0" visible="true" background="-1">
+        <name>Спутниковые снимки</name>
+        <mode>Google</mode>
+        <countries>World</countries>
+        <usage>photo</usage>
+        <cacheTimeout>2160</cacheTimeout>
+        <url><![CDATA[https://mt{s}.google.com/vt/lyrs=s&hl=ru&x={x}&y={y}&z={z}&scale={ts}]]></url>
+        <serverPart>0;1;2;3</serverPart>
+        <zoomPart>{z}-8</zoomPart>
+        <zoomMin>8</zoomMin>
+        <zoomMax>27</zoomMax>
+        <tileSize>256</tileSize>
+        <tileScales>
+            <tileScale dpi="0" multi="1" replace="1" />
+            <tileScale dpi="320" multi="2" replace="2" />
+        </tileScales>
+        <extraHeader><![CDATA[Referer#https://www.google.com/maps/]]></extraHeader>
+    </provider>
+    <provider id="3103020" type="0" visible="true" background="-1">
+        <name>Спутниковые снимки</name>
+        <mode>Google - Гибрид</mode>
+        <countries>World</countries>
+        <usage>photo</usage>
+        <cacheTimeout>2160</cacheTimeout>
+        <url><![CDATA[https://mt{s}.google.com/vt/lyrs=y&hl=ru&x={x}&y={y}&z={z}&scale={ts}]]></url>
+        <serverPart>0;1;2;3</serverPart>
+        <zoomPart>{z}-8</zoomPart>
+        <zoomMin>8</zoomMin>
+        <zoomMax>27</zoomMax>
+        <tileSize>256</tileSize>
+        <tileScales>
+            <tileScale dpi="0" multi="1" replace="1" />
+            <tileScale dpi="320" multi="2" replace="2" />
+        </tileScales>
+        <extraHeader><![CDATA[Referer#https://www.google.com/maps/]]></extraHeader>
+    </provider>
+    <provider id="3103050" type="5" visible="true" background="-1">
+        <name>Спутниковые снимки</name>
+        <mode>Bing</mode>
+        <countries>World</countries>
+        <usage>photo</usage>
+        <cacheTimeout>2160</cacheTimeout>
+        <url><![CDATA[https://t.ssl.ak.tiles.virtualearth.net/tiles/a{c}.jpeg?g=0]]></url>
+        <zoomPart>{z}-8</zoomPart>
+        <zoomMin>8</zoomMin>
+        <zoomMax>27</zoomMax>
+        <tileSize>256</tileSize>
+        <extraHeader><![CDATA[Referer#https://www.bing.com/maps]]></extraHeader>
+    </provider>
+    <provider id="3103060" type="0" visible="true" background="-1">
+        <name>Спутниковые снимки</name>
+        <mode>ESRI</mode>
+        <countries>World</countries>
+        <usage>photo</usage>
+        <cacheTimeout>2160</cacheTimeout>
+        <url><![CDATA[https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}]]></url>
+        <zoomPart>{z}-8</zoomPart>
+        <zoomMin>8</zoomMin>
+        <zoomMax>25</zoomMax>
+        <tileSize>256</tileSize>
+        <extraHeader><![CDATA[Referer#https://esri.maps.arcgis.com/home/webmap/viewer.html]]></extraHeader>
+    </provider>
+    <provider id="3103070" type="0" visible="true" background="-1">
+        <name>Спутниковые снимки</name>
+        <mode>Here</mode>
+        <countries>World</countries>
+        <usage>photo</usage>
+        <cacheTimeout>2160</cacheTimeout>
+        <url><![CDATA[https://{s}.aerial.maps.api.here.com/maptile/2.1/maptile/newest/satellite.day/{z}/{x}/{y}/{ts}/jpg?app_id=xWVIueSv6JL0aJ5xqTxb&app_code=djPZyynKsbTjIUDOBcHZ2g]]></url>
+        <serverPart>1;2;3;4</serverPart>
+        <zoomPart>{z}-8</zoomPart>
+        <zoomMin>8</zoomMin>
+        <zoomMax>25</zoomMax>
+        <tileSize>256</tileSize>
+        <tileScales>
+            <tileScale dpi="0" multi="1" replace="256" />
+            <tileScale dpi="320" multi="2" replace="512" />
+        </tileScales>
+        <extraHeader><![CDATA[Referer#https://wego.here.com/]]></extraHeader>
+    </provider>
+    <provider id="3103080" type="0" visible="true" background="-1">
+        <name>Спутниковые снимки</name>
+        <mode>MapBox</mode>
+        <countries>World</countries>
+        <usage>photo</usage>
+        <cacheTimeout>2160</cacheTimeout>
+        <url><![CDATA[https://{s}.tiles.mapbox.com/v4/mapbox.satellite/{z}/{x}/{y}.jpg?access_token=pk.eyJ1Ijoib3BlbnN0cmVldG1hcCIsImEiOiJja2w5YWt5bnYwNjZmMnFwZjhtbHk1MnA1In0.eq2aumBK6JuRoIuBMm6Gew]]></url>
+        <serverPart>a;b;c;d</serverPart>
+        <zoomPart>{z}-8</zoomPart>
+        <zoomMin>8</zoomMin>
+        <zoomMax>27</zoomMax>
+        <tileSize>256</tileSize>
+    </provider>
+    <provider id="3103090" type="1" visible="true" background="-1">
+        <name>Спутниковые снимки</name>
+        <mode>Maxar Standard</mode>
+        <countries>World</countries>
+        <usage>photo</usage>
+        <cacheTimeout>2160</cacheTimeout>
+        <url><![CDATA[https://services.digitalglobe.com/earthservice/tmsaccess/tms/1.0.0/DigitalGlobe:ImageryTileService@EPSG:3857@jpg/{z}/{x}/{y}.jpg?connectId=f57b8754-0d70-4439-bdb4-641beea5c2ec]]></url>
+        <zoomPart>{z}-8</zoomPart>
+        <zoomMin>8</zoomMin>
+        <zoomMax>27</zoomMax>
+        <tileSize>256</tileSize>
+        <extraHeader><![CDATA[Referer#https://www.openstreetmap.org/id]]></extraHeader>
+    </provider>
+
+    <!-- Слои -->
+    <provider id="3105010" type="0" visible="true" background="-1">
+        <name>Слои</name>
+        <mode>Google</mode>
+        <countries>World</countries>
+        <usage>overlay</usage>
+        <cacheTimeout>2160</cacheTimeout>
+        <url><![CDATA[https://mt{s}.google.com/vt/lyrs=h&hl=ru&x={x}&y={y}&z={z}&scale={ts}]]></url>
+        <serverPart>0;1;2;3</serverPart>
+        <zoomPart>{z}-8</zoomPart>
+        <zoomMin>8</zoomMin>
+        <zoomMax>27</zoomMax>
+        <tileSize>256</tileSize>
+        <tileScales>
+            <tileScale dpi="0" multi="1" replace="1" />
+            <tileScale dpi="320" multi="2" replace="2" />
+        </tileScales>
+        <extraHeader><![CDATA[Referer#https://www.google.com/maps/]]></extraHeader>
+    </provider>
+    <provider id="3105030" type="0" visible="true" background="-1">
+        <name>Слои</name>
+        <mode>Wikimapia</mode>
+        <countries>World</countries>
+        <usage>overlay</usage>
+        <cacheTimeout>720</cacheTimeout>
+        <url><![CDATA[http://i{s}.wikimapia.org/?x={x}&y={y}&zoom={z}&lng=1&type=hybrid]]></url>
+        <serverPart>{x}%4+({y}%4)*4</serverPart>
+        <zoomPart>{z}-8</zoomPart>
+        <zoomMin>8</zoomMin>
+        <zoomMax>30</zoomMax>
+        <tileSize>256</tileSize>
+        <extraHeader><![CDATA[Referer#http://wikimapia.org/]]></extraHeader>
+    </provider>
+    <provider id="3105040" type="0" visible="true" background="-1">
+        <name>Слои</name>
+        <mode>OSM</mode>
+        <countries>World</countries>
+        <usage>overlay</usage>
+        <cacheTimeout>720</cacheTimeout>
+        <url><![CDATA[https://{s}.tiles.mapbox.com/v4/openstreetmap.map-inh76ba2/{z}/{x}/{y}{ts}.png?access_token=pk.eyJ1Ijoib3BlbnN0cmVldG1hcCIsImEiOiJjaml5MjVyb3MwMWV0M3hxYmUzdGdwbzE4In0.q548FjhsSJzvXsGlPsFxAQ]]></url>
+        <serverPart>a;b;c;d</serverPart>
+        <zoomPart>{z}-8</zoomPart>
+        <zoomMin>8</zoomMin>
+        <zoomMax>28</zoomMax>
+        <tileSize>256</tileSize>
+        <tileScales>
+            <tileScale dpi="0" multi="1" replace="" />
+            <tileScale dpi="320" multi="2" replace="@2x" />
+        </tileScales>
+    </provider>
+
+    <!-- Треки -->
+    <provider id="3106010" type="0" visible="true" background="-1">
+        <name>Треки</name>
+        <mode>OSM</mode>
+        <countries>World</countries>
+        <usage>overlay</usage>
+        <cacheTimeout>720</cacheTimeout>
+        <url><![CDATA[https://gps-{s}.tile.openstreetmap.org/lines/{z}/{x}/{y}.png]]></url>
+        <serverPart>a;b;c</serverPart>
+        <zoomPart>{z}-8</zoomPart>
+        <zoomMin>8</zoomMin>
+        <zoomMax>27</zoomMax>
+        <tileSize>256</tileSize>
+    </provider>
+    <provider id="3106040" type="0" visible="true" background="-1">
+        <name>Треки</name>
+        <mode>Strava</mode>
+        <countries>World</countries>
+        <usage>overlay</usage>
+        <cacheTimeout>720</cacheTimeout>
+        <url><![CDATA[https://proxy.nakarte.me/https/heatmap-external-a.strava.com/tiles-auth/all/hot/{z}/{x}/{y}.png?px={ts}]]></url>
+        <serverPart></serverPart>
+        <zoomPart>{z}-8</zoomPart>
+        <zoomMin>8</zoomMin>    <!-- 0 -->
+        <zoomMax>23</zoomMax>   <!-- 15 -->
+        <tileSize>256</tileSize>
+        <tileScales>
+            <tileScale dpi="0" multi="2" replace="512" />
+        </tileScales>
+    </provider>
+    <provider id="3106060" type="0" visible="true" background="-1">
+        <name>Треки</name>
+        <mode>Strava - Вело</mode>
+        <countries>World</countries>
+        <usage>overlay</usage>
+        <cacheTimeout>720</cacheTimeout>
+        <url><![CDATA[https://proxy.nakarte.me/https/heatmap-external-a.strava.com/tiles-auth/ride/hot/{z}/{x}/{y}.png?px={ts}]]></url>
+        <serverPart></serverPart>
+        <zoomPart>{z}-8</zoomPart>
+        <zoomMin>8</zoomMin>    <!-- 0 -->
+        <zoomMax>23</zoomMax>   <!-- 15 -->
+        <tileSize>256</tileSize>
+        <tileScales>
+            <tileScale dpi="0" multi="2" replace="512" />
+        </tileScales>
+    </provider>
+    <provider id="3106070" type="0" visible="true" background="-1">
+        <name>Треки</name>
+        <mode>Strava - Бег</mode>
+        <countries>World</countries>
+        <usage>overlay</usage>
+        <cacheTimeout>720</cacheTimeout>
+        <url><![CDATA[https://proxy.nakarte.me/https/heatmap-external-a.strava.com/tiles-auth/run/hot/{z}/{x}/{y}.png?px={ts}]]></url>
+        <serverPart></serverPart>
+        <zoomPart>{z}-8</zoomPart>
+        <zoomMin>8</zoomMin>    <!-- 0 -->
+        <zoomMax>23</zoomMax>   <!-- 15 -->
+        <tileSize>256</tileSize>
+        <tileScales>
+            <tileScale dpi="0" multi="2" replace="512" />
+        </tileScales>
+    </provider>
+    <provider id="3106050" type="0" visible="true" required="false" background="3106060"> <!-- Карта, указанная в background, должна быть в xml`е выше -->
+        <name>Треки</name>
+        <mode>Strava - Бег+Вело</mode>
+        <countries>World</countries>
+        <usage>overlay</usage>
+        <cacheTimeout>720</cacheTimeout>
+        <url><![CDATA[https://proxy.nakarte.me/https/heatmap-external-a.strava.com/tiles-auth/run/hot/{z}/{x}/{y}.png?px={ts}]]></url>
+        <serverPart></serverPart>
+        <zoomPart>{z}-8</zoomPart>
+        <zoomMin>8</zoomMin>    <!-- 0 -->
+        <zoomMax>23</zoomMax>   <!-- 15 -->
+        <tileSize>256</tileSize>
+        <tileScales>
+            <tileScale dpi="0" multi="2" replace="512" />
+        </tileScales>
+    </provider>
+    <provider id="3106080" type="0" visible="true" background="-1">
+        <name>Треки</name>
+        <mode>Strava - Вода</mode>
+        <countries>World</countries>
+        <usage>overlay</usage>
+        <cacheTimeout>720</cacheTimeout>
+        <url><![CDATA[https://proxy.nakarte.me/https/heatmap-external-a.strava.com/tiles-auth/water/hot/{z}/{x}/{y}.png?px={ts}]]></url>
+        <serverPart></serverPart>
+        <zoomPart>{z}-8</zoomPart>
+        <zoomMin>8</zoomMin>    <!-- 0 -->
+        <zoomMax>23</zoomMax>   <!-- 15 -->
+        <tileSize>256</tileSize>
+        <tileScales>
+            <tileScale dpi="0" multi="2" replace="512" />
+        </tileScales>
+    </provider>
+    <provider id="3106090" type="0" visible="true" background="-1">
+        <name>Треки</name>
+        <mode>Strava - Зима</mode>
+        <countries>World</countries>
+        <usage>overlay</usage>
+        <cacheTimeout>720</cacheTimeout>
+        <url><![CDATA[https://proxy.nakarte.me/https/heatmap-external-a.strava.com/tiles-auth/winter/hot/{z}/{x}/{y}.png?px={ts}]]></url>
+        <serverPart></serverPart>
+        <zoomPart>{z}-8</zoomPart>
+        <zoomMin>8</zoomMin>    <!-- 0 -->
+        <zoomMax>23</zoomMax>   <!-- 15 -->
+        <tileSize>256</tileSize>
+        <tileScales>
+            <tileScale dpi="0" multi="2" replace="512" />
+        </tileScales>
+    </provider>
+
+</providers>
